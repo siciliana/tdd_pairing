@@ -20,4 +20,17 @@ describe Task do
       task.created_at.should be_kind_of Time 
     end
   end
+
+  describe "#mark_as_complete!" do
+    it "should set status to complete" do
+      task.status.should eq "complete"
+    end
+  end
+
+  describe "#mark_as_incomplete!" do
+    it "should set status to incomplete" do
+      task.status.should eq "incomplete"
+    end
+  end
+
 end
