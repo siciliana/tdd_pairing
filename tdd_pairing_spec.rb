@@ -23,12 +23,14 @@ describe Task do
 
   describe "#mark_as_complete!" do
     it "should set status to complete" do
+      task.mark_as_complete
       task.status.should eq "complete"
     end
   end
 
   describe "#mark_as_incomplete!" do
     it "should set status to incomplete" do
+      task.mark_as_incomplete
       task.status.should eq "incomplete"
     end
   end
